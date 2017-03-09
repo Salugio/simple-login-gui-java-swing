@@ -44,7 +44,7 @@ public class LoginForm extends javax.swing.JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 
-                if (txtUsername.getText().equals("admin") && !txtPwd.getText().equals("java")) {
+                if (txtUsername.getText().equals("admin") && txtPwd.getText().equals("java")) {
                     JOptionPane.showMessageDialog(LoginForm.this, "berhasil login");
                 }else{
                     JOptionPane.showMessageDialog(LoginForm.this, "gagal login");
